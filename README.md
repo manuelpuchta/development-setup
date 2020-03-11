@@ -1,13 +1,13 @@
 # development-setup
 
-My macOS development setup.
+**My macOS development setup.**
 
-Insallation overview:
+_Installation overview:_
 
-- Xcode and Command Line Tools
-- Homebrew
-- Node (version manager)
-- Ruby (version manager)
+- [Xcode and Command Line Tools](#install-xcode-and-command-line-tools)
+- [Homebrew](#install-homebrew)
+- [Node (version manager)](#install-node-with-node-version-manager-two_hearts)
+- [Ruby (version manager)](#install-ruby-version-manager)
 
 ## Install Xcode and Command Line Tools
 
@@ -42,8 +42,10 @@ brew doctor
 
 Docs: [nvm](https://github.com/nvm-sh/nvm), is a node version manager for [node.js](https://nodejs.org/en/), which will save us a lot of version troubles in the future. :sparkles:
 
+Pre-check for [latest install script](https://github.com/nvm-sh/nvm#installing-and-updating).
+
 ```sh
-# Install [latest install script](https://github.com/nvm-sh/nvm#installing-and-updating)
+# Install
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 # Restart your terminal. Successful? Following command should print a version number.
@@ -77,8 +79,10 @@ Ruby comes with a fresh macOS installation. I also prefer to install a version m
 
 Docs: [https://rvm.io/](https://rvm.io/)
 
+GPG ([GNU Privacy Guard](https://en.wikipedia.org/wiki/GNU_Privacy_Guard)) key installation isn't required, but security is important, have a look [here](https://rvm.io/rvm/security).
+
 ```sh
-# Optional GPG key install ([GNU Privacy Guard](https://en.wikipedia.org/wiki/GNU_Privacy_Guard))
+# Optional GPG key install
 gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 
 # Install RVM with default Ruby and Rails
