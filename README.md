@@ -90,4 +90,11 @@ curl -sSL https://get.rvm.io | bash -s stable --rails
 
 # Restart your terminal. Successful? Following command should print something like 'rvm is a shell function'.
 type rvm | head -n 1
+
+# Check installed ruby and gem version
+which ruby && gem --version
+
+# Will print
+/Users/username/.rvm/rubies/ruby-2.6.3/bin/ruby
+3.0.8
 ```
