@@ -24,13 +24,14 @@ xcode-select --install
 
 ## Install Homebrew
 
+Awesome package manager for macOS.
 Docs: [https://brew.sh/](https://brew.sh/)
 
 ```sh
 # Install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-# terminal restart. Successful? Following command should print a version number.
+# Restart the terminal. Successful? Following command should print a version number.
 brew --version
 
 # 'doctor' command helps with potential macOS issues
@@ -47,7 +48,7 @@ Pre-check for [latest install script](https://github.com/nvm-sh/nvm#installing-a
 # Install
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
-# terminal restart. Successful? Following command should print a version number.
+# Restart the terminal. Successful? Following command should print a version number.
 nvm --version
 
 # macOS 10.15.x and above have the Z Shell (zsh) as default, so nvm source lines should be present in zsh config file `~/.zshrc`, search for the NVM_DIR export: `export NVM_DIR`
@@ -87,7 +88,7 @@ gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D69
 # RVM install with default Ruby and Rails
 curl -sSL https://get.rvm.io | bash -s stable --rails
 
-# terminal restart. Successful? Following command should print something like 'rvm is a shell function'.
+# Restart the terminal. Successful? Following command should print something like 'rvm is a shell function'.
 type rvm | head -n 1
 
 # Installed ruby and gem version check
