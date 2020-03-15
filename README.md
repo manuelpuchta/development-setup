@@ -1,7 +1,5 @@
 # development-setup
 
-**My macOS development setup.**
-
 _Installation overview:_
 
 - [Xcode and Command Line Tools](#install-xcode-and-command-line-tools)
@@ -11,7 +9,8 @@ _Installation overview:_
 
 ## Install Xcode and Command Line Tools
 
-Search within the app store for Xcode or visit the [website](https://developer.apple.com/xcode/).
+- App store: search for "Xcode"
+- Apple documentation [website](https://developer.apple.com/xcode/).
 
 Install Command Line Tools:
 
@@ -31,10 +30,10 @@ Docs: [https://brew.sh/](https://brew.sh/)
 # Install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-# Restart your terminal. Successful? Following command should print a version number.
+# terminal restart. Successful? Following command should print a version number.
 brew --version
 
-# The doctor command will help you to fix any macOS issues
+# 'doctor' command helps with potential macOS issues
 brew doctor
 ```
 
@@ -48,10 +47,10 @@ Pre-check for [latest install script](https://github.com/nvm-sh/nvm#installing-a
 # Install
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
-# Restart your terminal. Successful? Following command should print a version number.
+# terminal restart. Successful? Following command should print a version number.
 nvm --version
 
-# macOS 10.15.x and above have the Z Shell (zsh) as default, so nvm source lines should be present in your zsh config file `~/.zshrc`, search for the NVM_DIR export: `export NVM_DIR`
+# macOS 10.15.x and above have the Z Shell (zsh) as default, so nvm source lines should be present in zsh config file `~/.zshrc`, search for the NVM_DIR export: `export NVM_DIR`
 
 # List, install latest node LTS version and set it as default:
 nvm ls-remote
@@ -65,7 +64,7 @@ nvm use 12.16.1
 # Set it as default
 nvm alias default 12.16.1
 
-# Now you should be able to use and log the defined node and npm version
+# node and npm version check
 node --version && npm --version
 
 # Will print
@@ -75,23 +74,23 @@ v12.16.1
 
 ## Install Ruby version manager
 
-Ruby comes with a fresh macOS installation. I also prefer to install a version manager for Ruby, as it won't install any Ruby related software globally (no `sudo`, yay) and helps us to keep our working machines clean, to prevent any errors.
+Ruby comes with a fresh macOS installation. I also prefer to install a version manager for Ruby, as it won't install any Ruby related software globally (no `sudo`, yay) and helps to keep the working machine clean, to prevent any errors.
 
 Docs: [https://rvm.io/](https://rvm.io/)
 
-GPG ([GNU Privacy Guard](https://en.wikipedia.org/wiki/GNU_Privacy_Guard)) key installation isn't required, but security is important, have a look [here](https://rvm.io/rvm/security).
+GPG ([GNU Privacy Guard](https://en.wikipedia.org/wiki/GNU_Privacy_Guard)) key installation isn't required, but security is important, more [infos](https://rvm.io/rvm/security).
 
 ```sh
 # Optional GPG key install
 gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 
-# Install RVM with default Ruby and Rails
+# RVM install with default Ruby and Rails
 curl -sSL https://get.rvm.io | bash -s stable --rails
 
-# Restart your terminal. Successful? Following command should print something like 'rvm is a shell function'.
+# terminal restart. Successful? Following command should print something like 'rvm is a shell function'.
 type rvm | head -n 1
 
-# Check installed ruby and gem version
+# Installed ruby and gem version check
 which ruby && gem --version
 
 # Will print
