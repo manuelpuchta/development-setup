@@ -2,10 +2,18 @@
 
 _Installation overview:_
 
+- [Show hidden files](#show-hidden-files)
 - [Xcode and Command Line Tools](#install-xcode-and-command-line-tools)
 - [Homebrew](#install-homebrew)
 - [Node (version manager)](#install-node-with-node-version-manager-two_hearts)
 - [Ruby (version manager)](#install-ruby-version-manager)
+
+## Show hidden files
+
+```sh
+defaults write com.apple.Finder AppleShowAllFiles true
+killall Finder
+```
 
 ## Install Xcode and Command Line Tools
 
