@@ -5,8 +5,7 @@ _Installation overview:_
 - [Show hidden files](#show-hidden-files)
 - [Xcode and Command Line Tools](#install-xcode-and-command-line-tools)
 - [Homebrew](#install-homebrew)
-- [Node (version manager)](#install-node-with-node-version-manager-two_hearts)
-- [Ruby (version manager)](#install-ruby-version-manager)
+- [Node](#install-node-with-node-version-manager-two_hearts) (version manager) and/or [asdf](#install-asdf-multiple-runtime-version-management) (multiple runtime version management)
 
 ## Show hidden files
 
@@ -37,7 +36,7 @@ Docs: [https://brew.sh/](https://brew.sh/)
 
 ```sh
 # Install
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 # Restart the terminal. Successful? Following command should print a version number.
 brew --version
@@ -81,28 +80,6 @@ v12.16.1
 6.13.4
 ```
 
-## Install Ruby version manager
+## Install asdf (multiple runtime version management)
 
-Ruby comes with a fresh macOS installation. I also prefer to install a version manager for Ruby, as it won't install any Ruby related software globally (no `sudo`, yay) and helps to keep the working machine clean, to prevent any errors.
-
-Docs: [https://rvm.io/](https://rvm.io/)
-
-GPG ([GNU Privacy Guard](https://en.wikipedia.org/wiki/GNU_Privacy_Guard)) key installation isn't required, but security is important, more [infos](https://rvm.io/rvm/security).
-
-```sh
-# Optional GPG key install
-gpg2 --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
-
-# RVM install with default Ruby and Rails
-curl -sSL https://get.rvm.io | bash -s stable --rails
-
-# Restart the terminal. Successful? Following command should print something like 'rvm is a shell function'.
-type rvm | head -n 1
-
-# Installed ruby and gem version check
-which ruby && gem --version
-
-# Will print
-/Users/username/.rvm/rubies/ruby-2.6.3/bin/ruby
-3.0.8
-```
+Docs: [https://asdf-vm.com/](https://asdf-vm.com/)
