@@ -3,6 +3,7 @@
 _Installation overview:_
 
 - [Show hidden files](#show-hidden-files)
+- [Oh My Zsh](#install-oh-my-zsh)
 - [Xcode and Command Line Tools](#install-xcode-and-command-line-tools)
 - [Homebrew](#install-homebrew)
 - [Node](#install-node-with-node-version-manager-two_hearts) (version manager) and/or [asdf](#install-asdf-multiple-runtime-version-management) (multiple runtime version management)
@@ -12,6 +13,14 @@ _Installation overview:_
 ```sh
 defaults write com.apple.Finder AppleShowAllFiles true
 killall Finder
+```
+
+## Install Oh My Zsh
+
+Docs: [https://ohmyz.sh/](https://ohmyz.sh/)
+
+```sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 ## Install Xcode and Command Line Tools
